@@ -1,0 +1,25 @@
+:root{
+  --bg-main:#ffffff;
+  --bg-body:white;
+  
+  --com-heading :#1a237e;
+  --com-subHeading: black;
+
+  --com-01-bg: #1565c0;
+  --com-01-bg-fadded:#e3f2fd;
+  --com-01-text: white;
+  --com-01-text-switched:#3e2723;
+  --com-01-hover:#e3f2fd;
+  --com-01-shadow:#00000026;
+
+  --com-02-bg: #1565c0;
+  --com-02-bg-fadded:#e3f2fd;
+  --com-02-text: #ffffff;
+  --com-02-text2: #000000;
+  --com-02-text-switched:#3e2723;
+  --com-02-hover:#bbdefb;
+  --com-02-shadow:#00000026;
+
+  --com-test:#ffd000;
+} 
+

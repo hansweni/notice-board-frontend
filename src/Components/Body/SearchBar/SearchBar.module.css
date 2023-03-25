@@ -1,0 +1,60 @@
+.searchBar{
+    box-shadow: var(--com-01-shadow) 0px 5px 15px 5px;  
+    border-radius: 1em;
+}
+.form{
+   display: inline-block;
+   padding: 0.5em;
+}
+
+input[type="text"]{ 
+   border:solid var(--com-01-bg) 2px;
+   border-radius: 0.3em;
+   font-size: 1.2em;
+   margin: 0.3rem;
+  
+}
+input:hover{
+   box-shadow: var(--com-01-hover) 0px 2px 15px 2px;  
+}
+
+select{ 
+   background-color: var(--com-01-bg);
+   color: var(--com-01-text);
+   border-radius: 0.3em;
+   font-weight: bold;
+   font-size: 1.2em;
+   margin: 0.3rem; 
+}
+select:hover{
+   color: var(--com-01-text-switched);
+   background-color: var(--com-01-bg-fadded);
+   box-shadow: var(--com-01-hover) 0px 2px 15px 2px;  
+}
+.btn{
+   background-color: var(--com-01-bg);
+   color: var(--com-01-text);
+   border-radius: 0.3em;
+   font-weight: bold;
+   font-size: 1.2em;
+   margin: 0.3rem;
+   display: inline-block;
+   box-sizing: border-box;
+}
+.btn:hover{
+   color: var(--com-01-text-switched);
+   background-color: var(--com-01-bg-fadded);
+   box-shadow: var(--com-01-hover) 0px 2px 15px 2px;  
+}
+@media all and (max-width:30em){
+   .btn{
+      display: block;
+      width: 95%;
+   }
+   select{
+      width: 20%;
+   }
+   input[type="text"]{
+      width: 70%;
+   }
+}

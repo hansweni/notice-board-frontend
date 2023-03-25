@@ -1,0 +1,32 @@
+.footer{
+    height: fit-content;
+    margin: 1rem 1rem 1rem 1rem;
+    padding:1em;
+    box-shadow: var(--com-01-shadow) 0px 5px 15px 5px;
+    color: var(--com-02-text2);
+    overflow: scroll;
+    border-radius: 1em;
+    background-color: var(--bg-body);
+}
+.footer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .left{
+    float: left;
+  }
+  .right{
+    float: right;
+  }
+  .right a{
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    padding: 1rem ;
+  }
+  @media all and (max-width:30em){
+    .right{
+     display: block;
+     width: 100%;
+     text-align: center;
+    }
+  }

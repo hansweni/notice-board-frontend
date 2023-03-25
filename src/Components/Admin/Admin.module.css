@@ -1,0 +1,23 @@
+.adminBody{
+    height: 90vh;
+    margin: 1rem 1rem 1rem 1rem;
+    padding:1em;
+    box-shadow: #00000026 0px 5px 15px 5px;
+    overflow: scroll;
+    border-radius: 1em;
+    background-color: var(--bg-body);
+    text-align: center;
+}
+.adminBody {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .btn{
+    margin: 1rem;
+
+  }
+  .btn:hover{
+    cursor: pointer;
+  }
+  

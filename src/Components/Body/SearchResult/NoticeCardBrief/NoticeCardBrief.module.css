@@ -1,0 +1,84 @@
+.noticeCardBrief{
+    box-shadow: var(--com-02-shadow) 0px 5px 15px 5px;
+    display: block;
+    padding: 0.5em;
+    margin: 1em auto;
+    border-radius: 1em;
+
+}
+.date{
+    display: inline-block;
+    background-color: var(--com-02-bg);
+   color: var(--com-02-text);
+   border-radius: 0.3em;
+   font-weight: bold;
+   font-size: 1em;
+   margin: 0.3rem; 
+}
+.subject{
+    display: inline-block;
+    background-color: var(--com-02-bg-fadded);
+    color: var(--com-02-text2);
+    border-radius: 0.3em;
+    font-size: 1em;
+    margin: 0.3rem; 
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.department{
+    display: inline-block;
+    background-color: var(--com-02-bg);
+   color: var(--com-02-text);
+   border-radius: 0.3em;
+   font-weight: bold;
+   font-size: 1em;
+   margin: 0.3rem; 
+   text-align: center;
+}
+.moreBtn{
+    display: inline-block;
+    background-color: var(--com-02-bg);
+   color: var(--com-02-text);
+   border-radius: 0.3em;
+   font-weight: bold;
+   font-size: 1em;
+   margin: 0.3rem; 
+   border: solid var(--com-02-bg);;
+}
+.moreBtn:hover{
+    color: var(--com-02-text-switched);
+    background-color: var(--com-02-bg-fadded);
+    box-shadow: var(--com-02-hover) 0px 2px 15px 2px;  
+}
+.tags{
+    display: inline-block;
+    /* background-color: var(--com-02-bg); */
+    border: solid var(--com-02-bg);;
+   color: var(--com-02-text2);
+   border-radius: 0.3em;
+   font-weight: bold;
+   font-size: 1em;
+   margin: 0.3rem; 
+}
+
+@media all and (max-width:30em){
+    .date{
+       display: block;
+       width: 97%;
+    }
+    .subject{
+        width:inherit;
+    }
+    .moreBtn{
+       display: block;
+       width: 97%;
+    }
+    .department{
+       display: block;
+       width: 97%;
+    }
+    .tags{
+        display: none;
+    }
+   
+ }

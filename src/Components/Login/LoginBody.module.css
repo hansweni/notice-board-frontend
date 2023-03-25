@@ -1,0 +1,33 @@
+.loginBody{
+    height: 90vh;
+    margin: 1rem 1rem 1rem 1rem;
+    padding:1em;
+    box-shadow: #00000026 0px 5px 15px 5px;
+    overflow: scroll;
+    border-radius: 1em;
+    background-color: var(--bg-body);
+    text-align: center;
+}
+.loginBody::-webkit-scrollbar {
+    display: none;
+  }
+input[type=password]{
+    width: 15rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border-color: var(--com-01-bg);
+}
+input[type=text]{
+    width: 15rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border-color: var(--com-01-bg);
+}
+.btn{
+    margin-top: 1rem;
+    width: 15rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    font-weight: bold;
+    border-color: var(--com-01-bg);
+}

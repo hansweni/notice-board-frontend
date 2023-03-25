@@ -1,0 +1,33 @@
+.header_div{
+    margin-left: 1.5rem;
+}
+.main_heading{
+    color: var(--com-heading);
+    font-size: 3em;
+    font-weight: bolder;
+    display: inline-block;
+}
+.sub_heading{
+    color: var(--com-subHeading);
+    font-size: 1.2em;
+    font-weight: bold;
+   
+}
+.themes{  
+    margin :2rem 3rem 0rem 0rem ;
+    box-sizing: border-box;
+    display: inline-block;
+    float:right;
+}
+.purpleBtn{
+    background-color: purple;
+    margin-left: 0.3rem;
+}
+.darkBtn{
+    background-color: #2d2c2c;
+    margin-left: 0.3rem;
+}
+.lightBtn{
+    background-color: #cdc2c2;
+    margin-left: 0.3rem;
+}
