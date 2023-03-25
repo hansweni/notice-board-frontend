@@ -58,8 +58,9 @@ export default function Header() {
   
   return (
     <div className={style.header_div}>
-      
+        
         <Link to="/" style={{ textDecoration: 'none' }} > 
+          <img src={logo} className={style.logo} alt="AEC"/>
           <div className={style.main_heading}> Notice Board   </div>
         </Link>  
         <div className={style.themes }>
@@ -77,7 +78,7 @@ export default function Header() {
            
         </div>
         
-        <img src={logo} alt="AEC"/>
+        
         
     </div>
   )

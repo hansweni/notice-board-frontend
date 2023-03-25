@@ -2,13 +2,17 @@ import React,{useState} from 'react'
 import style from './AddNotice.module.css';
 import {useForm} from 'react-hook-form'
 import {useNavigate} from 'react-router-dom';
+import UploadFile from './UploadFile';
 
 export default function NoticePopup({open}) {
     const{register,handleSubmit} = useForm();
+    const [refv, setRefv] = useState('')
     const navigate = useNavigate();
+    
     const onSubmit =(data)=>{
         try{ 
             const arr = data.Tags.split(" ");
+            setRefv(data.RefNo)
             fetch('/api/admin/notice',{
              method: "POST",       
              body: JSON.stringify({
@@ -75,6 +79,7 @@ export default function NoticePopup({open}) {
             <input type="text" {...register("PostedBy")} placeholder="Posted  By" required></input><br/>        
             <button className={style.btn}>Add Entry </button>
         </form>
+        <UploadFile RefNo={refv} />
 
     </div>
   )

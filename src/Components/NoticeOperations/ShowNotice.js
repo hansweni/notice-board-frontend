@@ -1,6 +1,21 @@
 import React from 'react'
 import style from './ShowNotice.module.css'
 export default function ShowNotice({open, onClose, details}) {
+
+  const handleClick =( )=>{
+    const url = `http://localhost:5000/api/admin/view?RefNo=${details[0].RefNo}`
+    window.open(url, "_blank")
+    // try{ 
+    //     const url = `/api/admin/view?RefNo=${details[0].RefNo}`
+    //     fetch(url,{
+    //      method: "GET"} )      
+
+    //  }catch(error){
+    //     console.log(error);
+    //      alert("Exception occured ");
+    // }
+     }
+
 if(!open) return null;
   return (
     <div onClick={onClose} className={style.overlay}>
@@ -22,6 +37,7 @@ if(!open) return null;
            
             
         </div>
+        <button onClick={handleClick}> Open Pdf </button>
     </div>
 </div>
   )
