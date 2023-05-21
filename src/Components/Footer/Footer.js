@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <div className={style.footer}> 
-        <div className={style.left}>&#169; 2022 All Rights Reserved <br/><br/> Handcrafted with ❤️ By <b><i>AEC</i></b></div>
+        <div className={style.left}>&#169; 2023 All Rights Reserved <br/></div>
         <div className={style.right}> <Social/> </div>
       </div>
       

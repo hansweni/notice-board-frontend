@@ -2,6 +2,7 @@ import React,{useState, useEffect}from 'react'
 import style from './Body.module.css';
 import SearchBar from './SearchBar/SearchBar'
 import NoticeCardBrief from './SearchResult/NoticeCardBrief/NoticeCardBrief';
+import Important from './Important/Important';
 export default function Body() {
   const[notices, setNotices] = useState([]);
   function loadNotices(url){
@@ -22,15 +23,18 @@ export default function Body() {
   
   return (
     <div>
+       <SearchBar updateContent={setNotices}/>
+       <div className={style.fullBody}>
+       <Important />
       <div className={style.body}>
-        <SearchBar updateContent={setNotices}/> 
+       
         {notices.map(noticeInfo =>
             <div key={noticeInfo._id}>
               <NoticeCardBrief info={noticeInfo} />                        
             </div>
         )} 
       </div>
-        
+        </div>
     </div>
   )
 }

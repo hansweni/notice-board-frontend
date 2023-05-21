@@ -11,7 +11,7 @@ export default function NoticePopup({open}) {
     
     const onSubmit =(data)=>{
         try{ 
-            const arr = data.Tags.split(" ");
+            const arr = data.Tags;
             setRefv(data.RefNo)
             fetch('/api/admin/notice',{
              method: "POST",       
@@ -57,20 +57,100 @@ export default function NoticePopup({open}) {
   if(!open) return null;
   return (
     <div className={style.overlay}>
-            <h1>Add Notice</h1> <button onClick={validate}>Validate Ref No </button>
+            <h1>Append Notice</h1> 
             <form id='addNotice' className={style.form} onSubmit={handleSubmit(onSubmit)}>
             <label>Reference No  : </label>
             <input type="text" {...register("RefNo")} placeholder="RefNo" required></input>
-            <label>{isUnique}</label>
+            
             <br/>
             <label>Issue Date : </label>
             <input type="date" {...register("IssueDate")}   required ></input><br/>
             <label>Subject : </label>
             <input type="text" {...register("Subject")} placeholder="Subject" required></input><br/>
             <label>Tags : </label>
-            <input type="text" {...register("Tags")} placeholder="Tags" required></input><br/>
+            <div>
+          <label>
+            <input type="checkbox" value="CSE" {...register('Tags')} />
+            CSE
+          </label>
+          <label>
+            <input type="checkbox" value="ECE" {...register('Tags')} />
+            ECE
+          </label>
+          <label>
+            <input type="checkbox" value="IT" {...register('Tags')} />
+            IT
+          </label>
+          <label>
+            <input type="checkbox" value="CIVIL" {...register('Tags')} />
+            CIVIL
+          </label>
+          <label>
+            <input type="checkbox" value="MECHANICAL" {...register('Tags')} />
+            MECHANICAL
+          </label>
+          <label>
+            <input type="checkbox" value="ELECTRICAL" {...register('Tags')} />
+            ELECTRICAL
+          </label>
+          <label>
+            <input type="checkbox" value="CSBS" {...register('Tags')} />
+            CSBS
+          </label>
+          <label>
+            <input type="checkbox" value="AIML" {...register('Tags')} />
+            AIML
+          </label>
+          <label>
+            <input type="checkbox" value="IOT" {...register('Tags')} />
+            IOT
+          </label>
+          <label>
+            <input type="checkbox" value="MANAGEMENT" {...register('Tags')} />
+            MANAGEMENT
+          </label>
+          <label>
+            <input type="checkbox" value="BCA" {...register('Tags')} />
+            BCA
+          </label>
+          <label>
+            <input type="checkbox" value="BSC" {...register('Tags')} />
+            BSC
+          </label>
+          <label>
+            <input type="checkbox" value="CLUBS" {...register('Tags')} />
+            CLUBS
+          </label>
+          <label>
+            <input type="checkbox" value="FACULTY" {...register('Tags')} />
+            FACULTY
+          </label>
+          <label>
+            <input type="checkbox" value="OTHERS" {...register('Tags')} />
+            ALL
+          </label>
+        </div>
+            {/*<select {...register("Tags")} required className={style.tag}>
+                <option>Choose Option</option>
+                <option value={"CSE"}>CSE</option>
+                <option value={"ECE"}>ECE</option>
+                <option value={"IT"}>IT</option>
+                <option value={"CIVIL"}>CIVIL</option>
+                <option value={"MECHANICAL"}>MECHANICAL</option>
+                <option value={"ELECTRICAL"}>ELECTRICAL</option>
+                <option value={"CSBS"}>CSBS</option>
+                <option value={"AIML"}>AIML</option>
+                <option value={"IOT"}>IOT</option>
+                <option value={"MANAGEMENT"}>MANAGEMENT</option>
+                <option value={"BCA"}>BCA</option>
+                <option value={"BSC"}>BSC</option>
+                <option value={"CLUBS"}>CLUBS</option>
+                <option value={"FACULTY"}>FACULTY</option>
+                <option value={"OTHERS"}>ALL</option>
+            </select>*/}<br/>
+            {/*<input type="text" {...register("Tags")} placeholder="Tags" required></input><br/>*/}
             <label> Body : </label> 
-            <input type="text" {...register("Body")} placeholder="Body " required></input><br/>
+            <input type="text" {...register("Body")} placeholder="Body " value="none"></input><br/>
             <label>Issuer Name : </label>
             <input type="text" {...register("IssuerName")} placeholder="Issueer  Name" required></input><br/>
             <label> Issuer Designation : </label>

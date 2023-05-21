@@ -11,6 +11,11 @@
     color: var(--com-subHeading);
     font-size: 1.2em;
     font-weight: bold;
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
+    font-style: italic;
+    color: rgb(146, 47, 47);
    
 }
 .themes{  
@@ -30,8 +35,15 @@
 .lightBtn{
     background-color: #cdc2c2;
     margin-left: 0.3rem;
+    border: 1px outset blue;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 2px;
 }
-
+.lightBtn:hover{
+    border: 1px inset;
+}
 .logo{
     height: 80px;
     weight: 80px;

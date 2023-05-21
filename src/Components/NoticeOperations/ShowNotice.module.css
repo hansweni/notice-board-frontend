@@ -7,18 +7,27 @@
     height: 100%;
     font-weight: bold;
   }
+  .openbtn{
+    margin: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
   .modelContainer {
     position: fixed;
-    margin: 1rem;
-
-    box-shadow:  3px 3px 20px 0px #ff8026 ;
+    width: 40%;
+    left: 20rem;
+    margin: 2rem;
+    z-index: 50;
+    box-shadow:  3px 3px 20px 0px #1b67ca ;
     border-radius: 15px;
     background-color: #ffffffe0;
   }
   .closeBtn {
     float: right;
     margin-right: 1rem;
+    cursor: pointer;
     
   }
   .mainContentContainer{

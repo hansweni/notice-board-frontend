@@ -61,12 +61,10 @@ export default function Header() {
         
         <Link to="/" style={{ textDecoration: 'none' }} > 
           <img src={logo} className={style.logo} alt="AEC"/>
-          <div className={style.main_heading}> Notice Board   </div>
+          <div className={style.main_heading}> Notification Panel   </div>
         </Link>  
         <div className={style.themes }>
           {/* <button onClick={purpleTheme} className={style.purpleBtn}>&nbsp;</button> */}
-          <button onClick={darkTheme} className={style.darkBtn}>&nbsp;</button>
-          <button onClick={lightTheme} className={style.lightBtn}>&nbsp;</button>
           <button onClick={login} className={style.lightBtn}>
               <Link to="/Login" style={{ textDecoration: 'none' }} >
                 Admin
@@ -74,7 +72,7 @@ export default function Header() {
           </button>
         </div>
         <div className={style.sub_heading}>
-            Asansol Engineering Collage, Asansol WB-INDIA
+            Asansol Engineering College
            
         </div>
         

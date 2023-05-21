@@ -3,7 +3,7 @@
     margin: 1rem 1rem 1rem 1rem;
     padding:1em;
     box-shadow: #00000026 0px 5px 15px 5px;
-    overflow: scroll;
+    overflow-y: scroll;
     border-radius: 1em;
     background-color: var(--bg-body);
     text-align: center;
@@ -13,11 +13,46 @@
     scrollbar-width: none;  /* Firefox */
   }
 
+.headText{
+  color: var(--com-heading);
+}
+.findbtn{
+  border: 1px outset var(--com-02-bg);
+  border-radius: 5px;
+  width: 50px;
+  background-color: var(--bg-body);
+  color: var(--com-heading);
+}
+.findbtn:hover{
+  border: 1px inset;
+  color: brown;
+}
   .btn{
     margin: 1rem;
-
+    background-color: white;
+    color: rgb(54, 54, 220);
+    border: 1px outset rgb(54, 54, 220);
+    border-radius: 5px;
+    padding: 1%;
   }
   .btn:hover{
     cursor: pointer;
+    background-color: white;
+    color: brown;
+    border: 1px inset;
   }
-  
+
+.body{
+    height: 90vh;
+    margin: 1rem 1rem 1rem 1rem;
+    padding:1em;
+    box-shadow: #00000026 0px 5px 15px 5px;
+    overflow: scroll;
+    text-align: justify;
+    border-radius: 1em;
+    background-color: var(--bg-body);
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+  }

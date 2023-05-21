@@ -1,0 +1,27 @@
+.main-slide {
+	height: 5%;
+	margin: 10px;
+}
+
+.newCode {
+	
+	height: 40%;
+	overflow: hidden;
+	padding: 2rem;
+	display: block;
+	border-style: outset;
+
+	background-image: linear-gradient(to right, #0c1b2d, #27496d, #597e9b);
+	
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 5px gray;
+}
+
+.noticeSubject {
+	cursor: pointer;
+}
+
+.noticeSubject:hover {
+	color: #e4eff6;
+}

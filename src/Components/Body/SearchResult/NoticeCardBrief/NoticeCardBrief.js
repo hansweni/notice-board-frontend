@@ -25,6 +25,11 @@ export default function NoticeCardBrief(props) {
     }
     )
 }
+
+const handleClick =()=>{
+  const url = `http://localhost:5000/api/admin/view?RefNo=${props.info.RefNo}`
+  window.open(url, "_blank");
+}
   
   return (
     <div className={style.noticeCardBrief}>
@@ -32,10 +37,10 @@ export default function NoticeCardBrief(props) {
         <div className={style.date}>
         &nbsp;{props.info.IssueDate.substring(0,10)}&nbsp;
         </div>
-        <div className={style.subject}>
+        <div className={style.subject} onClick={handleClick}>
             {props.info.Subject}
         </div>       
-        <button className={style.moreBtn} value={props.info.RefNo} onClick={showDetails}>More...</button>   
+        <button className={style.moreBtn} value={props.info.RefNo} onClick={showDetails}>MORE</button>   
         <div className={style.department}>
         &nbsp; {props.info.PostedBy} &nbsp;
         </div>

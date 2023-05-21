@@ -28,8 +28,9 @@ if(!open) return null;
             <label>Ref No : {details[0].RefNo}</label><br/>
             <label>Issue Date  : {details[0].IssueDate.substring(0,10)}</label><br/><br/>
             <label>Subject : {details[0].Subject}</label><br/>
+            <label>Department : {details[0].Tags.join(" ")}</label><br/>
             {/* <label>Tags : {details[0].Tags.join(" ")}</label><br/><br/> */}
-            <label>Body :<br/> {details[0].Body}</label><br/><br/><br/>
+            {/*<label>Body :<br/> {details[0].Body}</label><br/><br/><br/>*/}
             {/* <label>Issuer Name: {details[0].IssuerName}</label><br/> */}
             {/* <label>Issuer Designation : {details[0].IssuerDesignation}</label><br/>  */}
             <label>PostedBy : {details[0].PostedBy}</label><br/><br/><br/>
@@ -37,7 +38,7 @@ if(!open) return null;
            
             
         </div>
-        <button onClick={handleClick}> Open Pdf </button>
+        <button onClick={handleClick} className={style.openbtn}> Open Pdf </button>
     </div>
 </div>
   )

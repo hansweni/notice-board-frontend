@@ -1,10 +1,13 @@
 .noticeCardBrief{
-    box-shadow: var(--com-02-shadow) 0px 5px 15px 5px;
+    box-shadow: var(--com-02-shadow) 0px 5px 5px 5px;
     display: block;
     padding: 0.5em;
     margin: 1em auto;
     border-radius: 1em;
-
+    transition: background-color 2s;
+}
+.noticeCardBrief:hover{
+  background-color: rgb(0, 0, 0);
 }
 .date{
     display: inline-block;
@@ -12,38 +15,57 @@
    color: var(--com-02-text);
    border-radius: 0.3em;
    font-weight: bold;
-   font-size: 1em;
+   font-size: 0.9em;
    margin: 0.3rem; 
+}
+.subject:hover{
+  cursor: pointer;
 }
 .subject{
     display: inline-block;
     background-color: var(--com-02-bg-fadded);
     color: var(--com-02-text2);
     border-radius: 0.3em;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 0.3rem; 
     padding-left: 1em;
     padding-right: 1em;
 }
 .department{
     display: inline-block;
-    background-color: var(--com-02-bg);
+    background-color: rgb(210, 40, 40);
    color: var(--com-02-text);
    border-radius: 0.3em;
    font-weight: bold;
-   font-size: 1em;
+   font-size: 0.8em;
    margin: 0.3rem; 
    text-align: center;
-}
+   animation: animate 1.5s linear infinite;
+   z-index: -20;
+ } 
+  
+ @keyframes animate{
+   0%{
+     opacity: 0;
+   }
+   50%{
+     opacity: 0.7;
+   }
+   100%{
+     opacity: 0;
+   }
+ }
+
 .moreBtn{
     display: inline-block;
     background-color: var(--com-02-bg);
+    padding: 0.2rem;
    color: var(--com-02-text);
    border-radius: 0.3em;
    font-weight: bold;
-   font-size: 1em;
+   font-size: 0.7em;
    margin: 0.3rem; 
-   border: solid var(--com-02-bg);;
+   border: 1px solid var(--com-02-bg);;
 }
 .moreBtn:hover{
     color: var(--com-02-text-switched);
@@ -57,7 +79,7 @@
    color: var(--com-02-text2);
    border-radius: 0.3em;
    font-weight: bold;
-   font-size: 1em;
+   font-size: 0.8em;
    margin: 0.3rem; 
 }
 

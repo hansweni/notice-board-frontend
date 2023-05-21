@@ -7,16 +7,29 @@ height: 90vh;
     border-radius: 1em;
     background-color: var(--bg-body);
     text-align: left;
-    font-weight: bolder;
+    font-weight: bold;
   }
   
 .btn{
-  width: 100%;
+  width: 10rem;
+  color: white;
+  border: 1px solid black;
   margin-top: 2rem;
   border-radius: 8px;
   background:var(--com-01-bg);
   font-weight: bolder;
+  display: inline;
 }
 .btn:hover{
   cursor: pointer;
+}
+
+.tag{
+  padding: 4px;
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  margin: 5px;
+  border: 2px solid var(--com-01-bg);
+  border-radius: 8px;
 }
